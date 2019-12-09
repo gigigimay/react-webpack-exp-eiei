@@ -1,0 +1,11 @@
+body {
+  background: rgb(49, 53, 53);
+}
+
+.globalClass {
+  color: rgb(160, 160, 255);
+}
+
+:local(.localClass) {
+  color: red;
+}
