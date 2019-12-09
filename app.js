@@ -1,6 +1,9 @@
 import path from 'path'
 import express from 'express'
 import dotenv from 'dotenv'
+import logger from 'morgan'
+import bodyParser from 'body-parser'
+import cookieParser from 'cookie-parser'
 
 import routes from './routes'
 
@@ -15,6 +18,16 @@ const app = express()
 // view engine
 app.set('views', path.join(__dirname, './views'))
 app.set('view engine', 'pug')
+
+// logger, for when you run into a problem on production
+app.use(logger('combined'))
+
+// body parser
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// cookie parser
+app.use(cookieParser())
 
 // serve static files from 'public'
 app.use(express.static(path.join(__dirname, './public')))
@@ -32,7 +45,6 @@ app.use((req, res, next) => {
 
 // error handlers
 app.use((err, req, res, next) => {
-  console.log(err.status)
   res.status(err.status || 500)
   res.render('error', {
     message: err.message,
