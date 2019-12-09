@@ -23,12 +23,25 @@ export default {
       },
       {
         test: /\.js?$/,
-        use: 'babel-loader',
+        use: {
+          loader: 'babel-loader',
+          options: {
+            plugins: ['transform-inline-environment-variables'],
+          },
+        },
         exclude: /node_modules/,
       },
       {
         test: /\.(s)?css$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.svg$/,
+        use: 'svg-inline-loader',
+      },
+      {
+        test: /\.(jpe?g|png|gif|ico)$/i,
+        use: 'file-loader',
       },
     ],
   },

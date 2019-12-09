@@ -27,6 +27,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
@@ -34,12 +35,16 @@
     "cookie-parser": "^1.4.4",
     "css-loader": "^3.2.1",
     "dotenv": "^8.2.0",
+    "env-cmd": "^10.0.1",
     "express": "^4.17.1",
+    "file-loader": "^5.0.2",
     "morgan": "^1.9.1",
     "node-sass": "^4.13.0",
     "pug": "^2.0.4",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.1",
-    "webpack": "^4.41.2"
+    "svg-inline-loader": "^0.8.0",
+    "webpack": "^4.41.2",
+    "webpack-dev-middleware": "^3.7.2"
   }
 }
