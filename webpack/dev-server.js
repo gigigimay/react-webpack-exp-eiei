@@ -4,6 +4,7 @@
 
 import webpack from 'webpack'
 import webpackDevMiddleware from 'webpack-dev-middleware'
+// eslint-disable-next-line import/no-extraneous-dependencies
 import webpackHotMiddleware from 'webpack-hot-middleware'
 import webpackConfig from './config.babel'
 
