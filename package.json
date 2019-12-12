@@ -21,7 +21,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.17.0",
     "nodemon": "^2.0.1",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-hot-middleware": "^2.25.0"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",

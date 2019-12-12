@@ -6,13 +6,17 @@ import webpack from 'webpack'
 
 export default {
   devtool: 'eval-source-map',
-  entry: path.join(process.cwd(), 'src/index'),
+  entry: [
+    'webpack-hot-middleware/client?reload=true',
+    path.join(process.cwd(), 'src/index'),
+  ],
   output: {
     filename: 'bundle.js',
     path: path.join(process.cwd(), 'public', 'js'),
     publicPath: '/js',
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
   ],
   module: {
