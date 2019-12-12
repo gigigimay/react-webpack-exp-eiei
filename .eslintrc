@@ -21,6 +21,12 @@
         "semi": [
             "error",
             "never"
+        ],
+        "react/jsx-curly-newline": [
+            "error",
+            {
+                "singleline": "forbid"
+            }
         ]
     }
 }
