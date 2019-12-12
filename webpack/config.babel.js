@@ -6,6 +6,7 @@ import webpack from 'webpack'
 
 export default {
   devtool: 'eval-source-map',
+  mode: 'development',
   entry: [
     'webpack-hot-middleware/client?reload=true',
     path.join(process.cwd(), 'src/index'),

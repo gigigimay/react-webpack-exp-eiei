@@ -6,6 +6,7 @@ import webpack from 'webpack'
 
 export default {
   devtool: 'source-map',
+  mode: 'production',
   entry: path.join(process.cwd(), 'src/index'),
   output: {
     filename: 'bundle.js',
