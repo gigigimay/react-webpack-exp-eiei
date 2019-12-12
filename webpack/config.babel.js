@@ -23,11 +23,11 @@ export default {
     rules: [
       {
         enforce: 'pre',
-        test: /\.js$/,
+        test: /\.js(x)?$/,
         use: 'eslint-loader',
       },
       {
-        test: /\.js?$/,
+        test: /\.js$/,
         use: {
           loader: 'babel-loader',
           options: {
@@ -35,6 +35,10 @@ export default {
           },
         },
         exclude: /node_modules/,
+      },
+      {
+        test: /\.json$/,
+        use: 'json-loader',
       },
       {
         test: /\.(s)?css$/,
