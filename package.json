@@ -1,9 +1,8 @@
 {
-  "name": "reachatty",
+  "name": "react-webpack-exp-eiei",
   "version": "1.0.0",
-  "description": "'experimental chat application with built from scratch react.'",
+  "description": "experimental react app built from scratch. https://blog.cloudboost.io/create-a-react-application-from-scratch-part-1-introduction-b2e66dfb3aae?",
   "main": "index.js",
-  "repository": "git@github.com:gigigimay/reachatty.git",
   "author": "gigigimay <mo.maytiya_st@tni.ac.th>",
   "license": "MIT",
   "scripts": {
