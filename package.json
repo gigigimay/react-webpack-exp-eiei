@@ -38,7 +38,7 @@
     "css-loader": "^3.2.1",
     "dotenv": "^8.2.0",
     "env-cmd": "^10.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "file-loader": "^5.0.2",
     "morgan": "^1.9.1",
     "node-sass": "^4.13.1",
